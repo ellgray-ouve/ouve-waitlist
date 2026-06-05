@@ -7,6 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,18..72,400;0,18..72,500;1,18..72,400;1,18..72,500&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-34VK5BYJ52"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-34VK5BYJ52');function trackAdConversion(){gtag('event','conversion',{'send_to':'AW-18119715171/IOFqCO-nwaIcEOPSk8BD','value':1.0,'currency':'GBP'});}</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wjh22xau2i");</script>
 <style>
   :root{
     --bone:#F3EFE6; --paper:#FBFAF6; --ink:#1B1A17; --muted:#6E685D;
@@ -96,6 +99,14 @@
 
   footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:13px}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+
+  .modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:100;align-items:center;justify-content:center}
+  .modal.show{display:flex}
+  .modal-box{background:#fff;border-radius:8px;padding:48px;max-width:420px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  .modal-box h2{font-size:28px;font-weight:700;margin-bottom:12px;color:var(--ink)}
+  .modal-box p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.5}
+  .modal-box .btn-close{background:var(--ink);color:#fff;border:0;padding:12px 24px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.2s}
+  .modal-box .btn-close:hover{background:#000}
 
   @media(max-width:860px){.hero-grid,.two{grid-template-columns:1fr;gap:36px}.hero{padding:44px 0 0}section{padding:70px 0}.panel{padding:32px}}
 
@@ -234,6 +245,14 @@
   </div>
 </section>
 
+<div id="successModal" class="modal">
+  <div class="modal-box">
+    <h2>You're on the list.</h2>
+    <p>We'll be in touch before launch with founding pricing and early access.</p>
+    <button class="btn-close" onclick="document.getElementById('successModal').classList.remove('show')">Close</button>
+  </div>
+</div>
+
 <footer>
   <div class="wrap">
     <div class="mark" style="font-size:20px">Ouve.</div>
@@ -248,10 +267,25 @@
   function join(btn){
     const box=btn.closest('.form');
     const input=box.querySelector('input');
-    if(!input.value||!input.value.includes('@')){input.focus();box.querySelector('.row').style.borderColor='#b00';return;}
-    box.querySelector('.row').style.display='none';
-    const meta=box.querySelector('.meta'); if(meta) meta.style.display='none';
-    box.querySelector('.ok').style.display='block';
+    const email=input.value.trim();
+    if(!email||!email.includes('@')){input.focus();box.querySelector('.row').style.borderColor='#c00';return;}
+    btn.disabled=true;
+    btn.textContent='Joining...';
+    fetch('https://formspree.io/f/mgobvpgd',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})}).then(res=>{
+      if(res.ok){
+        const domain=email.split('@')[1];
+        gtag('event','waitlist_signup',{email_domain:domain,form_location:btn.getAttribute('data-location')||'unknown'});
+        document.getElementById('successModal').classList.add('show');
+        input.value='';
+        box.querySelector('.row').style.borderColor='';
+        btn.disabled=false;
+        btn.textContent='Join the waitlist →';
+      }else{
+        alert('Error joining. Try again.');
+        btn.disabled=false;
+        btn.textContent='Join the waitlist →';
+      }
+    }).catch(e=>{alert('Error. Try again.');btn.disabled=false;btn.textContent='Join the waitlist →';});
   }
 </script>
 </body>
