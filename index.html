@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,18..72,400;0,18..72,500;1,18..72,400;1,18..72,500&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-34VK5BYJ52"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-34VK5BYJ52');function trackAdConversion(){gtag('event','conversion',{'send_to':'AW-18119715171/IOFqCO-nwaIcEOPSk8BD','value':1.0,'currency':'GBP'});}</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-34VK5BYJ52');gtag('config','AW-18119715171');</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wjh22xau2i");</script>
 <style>
   :root{
@@ -120,7 +120,7 @@
   <div class="wrap bar">
     <div class="mark">Ouve.</div>
     <div class="tag">The world's first freestanding electric bidet</div>
-    <a href="#join" class="btn">Join waitlist</a>
+    <a href="#" onclick="event.preventDefault();window.scrollTo({top:0,behavior:'smooth'});setTimeout(()=>document.querySelector('#join input').focus(),400)" class="btn">Join waitlist</a>
   </div>
 </header>
 
@@ -271,21 +271,22 @@
     if(!email||!email.includes('@')){input.focus();box.querySelector('.row').style.borderColor='#c00';return;}
     btn.disabled=true;
     btn.textContent='Joining...';
-    fetch('https://formspree.io/f/mgobvpgd',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})}).then(res=>{
-      if(res.ok){
-        const domain=email.split('@')[1];
-        gtag('event','waitlist_signup',{email_domain:domain,form_location:btn.getAttribute('data-location')||'unknown'});
-        document.getElementById('successModal').classList.add('show');
-        input.value='';
-        box.querySelector('.row').style.borderColor='';
-        btn.disabled=false;
-        btn.textContent='Join the waitlist →';
+    const cb='mc'+Date.now();
+    window[cb]=function(data){
+      delete window[cb];
+      if(data.result==='success'){
+        gtag('event','waitlist_signup',{email_domain:email.split('@')[1],form_location:btn.getAttribute('data-location')||'unknown'});
+        window.location.href='https://thanks.ouve.co';
       }else{
-        alert('Error joining. Try again.');
-        btn.disabled=false;
-        btn.textContent='Join the waitlist →';
+        const msg=data.msg||'';
+        if(msg.includes('already subscribed')){window.location.href='https://thanks.ouve.co';}
+        else{alert(msg||'Error joining. Try again.');btn.disabled=false;btn.textContent='Join the waitlist \u2192';}
       }
-    }).catch(e=>{alert('Error. Try again.');btn.disabled=false;btn.textContent='Join the waitlist →';});
+    };
+    const s=document.createElement('script');
+    s.src='https://gmail.us18.list-manage.com/subscribe/post-json?u=6790d2e4b2d3acd871391a637&id=4992c28e98&f_id=00ffaee6f0&c='+cb+'&EMAIL='+encodeURIComponent(email);
+    document.body.appendChild(s);
+    setTimeout(()=>{s.remove()},8000);
   }
 </script>
 </body>
