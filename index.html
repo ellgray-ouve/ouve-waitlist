@@ -284,8 +284,10 @@
     window[cb]=function(data){
       delete window[cb];
       if(data.result==='success'){
-        gtag('event','waitlist_signup',{email_domain:email.split('@')[1],form_location:btn.getAttribute('data-location')||'unknown'});
-        window.location.href=thanksUrl;
+        let redirected=false;
+        function go(){if(!redirected){redirected=true;window.location.href=thanksUrl;}}
+        gtag('event','waitlist_signup',{email_domain:email.split('@')[1],form_location:btn.getAttribute('data-location')||'unknown',event_callback:go});
+        setTimeout(go,1000);
       }else{
         const msg=data.msg||'';
         if(msg.includes('already subscribed')){window.location.href=thanksUrl;}
