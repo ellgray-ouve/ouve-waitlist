@@ -7,255 +7,527 @@
 <meta name="description" content="No plumber. No installation. The first freestanding electric bidet designed to look like it belongs in your bathroom. Join the waitlist for founding pricing.">
 <link rel="canonical" href="https://waitlist.ouve.co">
 
-<!-- Open Graph (Facebook, LinkedIn, iMessage, WhatsApp) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://waitlist.ouve.co">
-<meta property="og:title" content="Ouve — Your bathroom deserves a bidet. Now yours can.">
-<meta property="og:description" content="The first freestanding electric bidet. No plumber, no installation. 10L reservoir, electric pump, designed to be seen. Join the waitlist.">
+<meta property="og:title" content="Ouve — Most of the world already cleans with water.">
+<meta property="og:description" content="The first freestanding electric bidet. No plumber, no installation, no permission. Join the waitlist for founding pricing.">
 <meta property="og:image" content="https://waitlist.ouve.co/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ouve — The world's first freestanding electric bidet">
 <meta name="twitter:description" content="No plumber. No installation. Designed to be seen. Join the waitlist for founding pricing.">
 <meta name="twitter:image" content="https://waitlist.ouve.co/og-image.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,18..72,400;0,18..72,500;1,18..72,400;1,18..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,18..72,300;0,18..72,400;0,18..72,500;1,18..72,300;1,18..72,400&display=swap" rel="stylesheet">
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-34VK5BYJ52"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-34VK5BYJ52');gtag('config','AW-18119715171');</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x27d84b5j6");</script>
+
 <style>
   :root{
-    --bone:#F3EFE6; --paper:#FBFAF6; --ink:#1B1A17; --muted:#6E685D;
-    --sand:#B3A488; --line:rgba(27,26,23,.12); --maxw:1180px;
+    --paper:#FBFAF6; --bone:#F3EFE6; --ink:#1B1A17; --muted:#6E685D;
+    --sand:#B3A488; --brass:#B08D57; --sage:#6F7560;
+    --line:rgba(27,26,23,.12);
+    --maxw:1240px; --pad:clamp(20px,4vw,48px);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;overflow-x:hidden}
-  body{font-family:'Hanken Grotesk',-apple-system,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;width:100%}
-  img{max-width:100%;height:auto}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
-  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+  body{
+    font-family:'Hanken Grotesk',-apple-system,sans-serif;
+    background:var(--paper);color:var(--ink);
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;width:100%;
+  }
+  img{max-width:100%;height:auto;display:block}
   a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
 
-  header{position:sticky;top:0;z-index:50;background:#FBFAF6;background:rgba(251,250,246,.97);border-bottom:1px solid var(--line)}
-  @supports (backdrop-filter:blur(12px)){header{background:rgba(251,250,246,.85);backdrop-filter:saturate(140%) blur(12px)}}
-  .bar{display:flex;align-items:center;justify-content:space-between;height:62px}
-  .mark{font-family:'Newsreader',serif;font-size:26px;letter-spacing:-.01em;font-weight:500}
-  .bar .tag{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
-  .bar .btn{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;border:1px solid var(--ink);padding:9px 16px;border-radius:2px;text-decoration:none;transition:.2s}
-  .bar .btn:hover{background:var(--ink);color:var(--paper)}
-  @media(max-width:720px){.bar .tag{display:none}}
+  .display{font-family:'Newsreader',Georgia,serif;font-weight:400;font-optical-sizing:auto;letter-spacing:-.015em;line-height:1.05}
+  .display em{font-style:italic;font-weight:300;color:var(--sage)}
+  .label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+  .chapter{
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--muted);
+    display:flex;align-items:center;gap:14px;margin-bottom:22px;
+  }
+  .chapter i{font-family:'Newsreader',serif;font-style:italic;font-weight:300;color:var(--brass);font-size:14px;letter-spacing:0;text-transform:none}
+  .chapter::after{content:"";height:1px;flex:0 0 56px;background:var(--line)}
 
-  .hero{padding:64px 0 0}
-  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
-  .hero h1{font-size:clamp(34px,5.4vw,68px);line-height:1.02;font-weight:800;letter-spacing:-.02em;text-transform:uppercase;overflow-wrap:break-word}
-  .hero .sub{font-size:18px;color:var(--muted);max-width:30ch;margin:22px 0 30px}
-  .hero-img{border-radius:6px;overflow:hidden;background:var(--bone);box-shadow:0 30px 70px -40px rgba(27,26,23,.4)}
-  .hero-img img{width:100%;display:block}
+  :focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:1px}
+  ::selection{background:var(--sand);color:var(--ink)}
 
-  .form{max-width:380px}
-  .form .row{display:flex;border:1.5px solid var(--ink);border-radius:3px;overflow:hidden;background:#fff}
-  .form input{flex:1;border:0;outline:0;padding:15px 16px;font-size:15px;font-family:inherit;background:transparent}
-  .form button{border:0;background:var(--ink);color:var(--paper);font-family:inherit;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:0 22px;cursor:pointer;transition:.2s;white-space:nowrap}
+  /* ---------- signature: the water window ---------- */
+  .gauge{position:fixed;left:26px;top:112px;bottom:92px;width:14px;z-index:40;pointer-events:none}
+  .gauge .track{position:absolute;left:6px;top:18px;bottom:18px;width:1px;background:var(--line)}
+  .gauge .fill{position:absolute;left:5.5px;top:18px;width:2px;height:0%;background:var(--sand);transition:height .15s linear;max-height:calc(100% - 36px)}
+  .gauge .cap{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);position:absolute;left:-2px;font-weight:600}
+  .gauge .cap.max{top:0}.gauge .cap.min{bottom:0}
+  @media(max-width:1120px){.gauge{display:none}}
+
+  /* ---------- header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.97);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .mark{font-family:'Newsreader',serif;font-size:27px;font-weight:500;letter-spacing:-.01em}
+  .bar .tag{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .btn-line{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;border:1px solid var(--ink);padding:10px 18px;border-radius:2px;background:transparent;color:var(--ink);cursor:pointer;font-family:inherit;transition:background .2s,color .2s;text-decoration:none}
+  .btn-line:hover{background:var(--ink);color:var(--paper)}
+  @media(max-width:760px){.bar .tag{display:none}}
+
+  /* ---------- hero · Option A, mobile-first (copy+form first, image second) ---------- */
+  .hero{background:var(--paper);border-bottom:1px solid var(--line)}
+  .hero .inner{
+    display:grid;grid-template-columns:1fr;
+    gap:clamp(30px,5vw,56px);
+    padding:clamp(30px,6vh,72px) 0 clamp(36px,6vh,84px);
+    align-items:center;
+  }
+  .hero .copy{max-width:560px}
+  .hero h1{font-size:clamp(33px,4.6vw,62px);max-width:15ch;margin-top:16px}
+  .hero .sub{font-size:16.5px;color:var(--muted);max-width:46ch;margin:16px 0 26px}
+  .hero .art .frame{
+    border-radius:4px;overflow:hidden;background:var(--bone);
+    box-shadow:0 34px 70px -46px rgba(27,26,23,.42);
+  }
+  .hero .art img{width:100%;height:auto;display:block}
+  /* two columns from tablet up: copy left, image right */
+  @media(min-width:900px){
+    .hero .inner{grid-template-columns:1.02fr .98fr;gap:clamp(40px,5vw,72px)}
+  }
+
+  /* ---------- form ---------- */
+  .form{max-width:430px;width:100%}
+  .form .row{display:flex;border:1.5px solid var(--ink);border-radius:2px;overflow:hidden;background:#fff}
+  .form input{flex:1;min-width:0;border:0;outline:0;padding:16px 18px;font-size:15.5px;font-family:inherit;background:transparent;color:var(--ink)}
+  .form input::placeholder{color:#9a9488}
+  .form button{border:0;background:var(--ink);color:var(--paper);font-family:inherit;font-weight:700;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;padding:0 22px;cursor:pointer;transition:background .2s;white-space:nowrap}
   .form button:hover{background:#000}
-  .form .meta{font-size:12px;color:var(--muted);margin-top:12px;display:flex;align-items:center;gap:8px}
-  .dot{width:6px;height:6px;border-radius:50%;background:var(--sand);display:inline-block}
-  .ok{margin-top:14px;font-size:14px;color:var(--ink);font-weight:600;display:none}
+  .form .meta{font-size:12.5px;color:var(--muted);margin-top:13px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--brass);display:inline-block;flex:none}
 
-  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:64px}
-  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:26px 28px}
-  .strip .item{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
-  .strip .item span{display:block;color:var(--muted);font-weight:500;letter-spacing:.04em;text-transform:none;font-size:13px;margin-top:4px}
-  @media(max-width:720px){.strip .wrap{grid-template-columns:repeat(2,1fr)}}
+  /* ---------- index strip ---------- */
+  .strip{border-bottom:1px solid var(--line);background:var(--paper)}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .strip .item{padding:24px 22px 24px 0;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+  .strip .item + .item{border-left:1px solid var(--line);padding-left:22px}
+  .strip .item span{display:block;color:var(--muted);font-weight:400;letter-spacing:.01em;text-transform:none;font-size:13.5px;margin-top:4px;font-family:'Newsreader',serif;font-style:italic}
+  @media(max-width:860px){
+    .strip .wrap{grid-template-columns:1fr 1fr}
+    .strip .item:nth-child(3){border-left:0;padding-left:0}
+    .strip .item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  }
 
-  section{padding:96px 0}
-  .lead{font-size:clamp(26px,3.6vw,40px);line-height:1.12;font-weight:700;letter-spacing:-.02em;max-width:18ch}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-  .panel{background:var(--bone);border-radius:6px;padding:48px}
-  .panel p{font-size:18px;color:#34312b;margin-top:18px}
-  .panel p:first-of-type{margin-top:0}
-  .panel-img{border-radius:6px;overflow:hidden;background:#fff}
-  .panel-img img{width:100%;display:block}
+  section{padding:clamp(72px,11vh,132px) 0}
+  .lead{font-size:clamp(30px,3.9vw,50px)}
 
-  .how{background:var(--bone)}
-  .how .head{text-align:center;margin-bottom:58px}
-  .how .head .lead{margin:14px auto 0;max-width:none}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
-  .step .num{font-family:'Newsreader',serif;font-size:15px;color:var(--sand);font-weight:500;letter-spacing:.04em}
-  .step .pic{border-radius:6px;overflow:hidden;background:#fff;aspect-ratio:4/3;margin:14px 0 20px;border:1px solid var(--line)}
-  .step .pic img{width:100%;height:100%;object-fit:cover;display:block}
-  .step h3{font-size:21px;font-weight:700;letter-spacing:-.01em}
-  .step p{font-size:15px;color:var(--muted);margin-top:8px}
-  @media(max-width:720px){.steps{grid-template-columns:1fr;gap:42px}}
+  /* ---------- chapter 01 · problem (overlap composition) ---------- */
+  .problem .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:center}
+  .problem .plate{background:var(--bone);border-radius:4px;padding:clamp(30px,4.5vw,64px);position:relative;z-index:1}
+  .problem .plate p{font-size:17px;color:#3a362e;margin-top:20px;max-width:50ch}
+  .problem .plate .kicker{font-family:'Newsreader',serif;font-style:italic;font-size:19px;color:var(--muted);margin-top:24px}
+  .problem .plate strong{font-weight:600;color:var(--ink)}
+  .problem .art{position:relative;z-index:2;margin-left:-56px}
+  .problem .art .frame{border-radius:4px;overflow:hidden;background:#fff;box-shadow:0 34px 70px -42px rgba(27,26,23,.4)}
+  @media(max-width:960px){
+    .problem .grid{grid-template-columns:1fr}
+    .problem .art{margin:-30px 18px 0}
+  }
 
-  .feat-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:54px;flex-wrap:wrap}
-  .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
-  .f{border-top:1px solid var(--line);padding:26px 0;display:grid;grid-template-columns:38px 1fr;gap:8px}
-  .f .fn{font-family:'Newsreader',serif;color:var(--sand);font-size:16px;font-weight:500}
-  .f h4{font-size:19px;font-weight:700;letter-spacing:-.01em}
-  .f p{font-size:15px;color:var(--muted);margin-top:7px}
-  .feat-media{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
-  .feat-media .m{border-radius:6px;overflow:hidden;background:var(--bone);border:1px solid var(--line)}
-  .feat-media .m img{width:100%;display:block}
-  @media(max-width:720px){.feat-grid{grid-template-columns:1fr}.feat-media{grid-template-columns:1fr}}
+  /* ---------- chapter 02 · ritual ---------- */
+  .skin{background:var(--bone);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .ritual .head{max-width:660px;margin-bottom:clamp(42px,6vh,68px)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,38px)}
+  .step .pic{border-radius:4px;overflow:hidden;background:#fff;aspect-ratio:4/3;margin-bottom:20px;border:1px solid var(--line)}
+  .step .pic img{width:100%;height:100%;object-fit:cover}
+  .step h3{font-family:'Newsreader',serif;font-weight:500;font-size:23px;letter-spacing:-.01em;display:flex;align-items:baseline;gap:12px}
+  .step h3 .n{font-family:'Newsreader',serif;font-style:italic;font-weight:300;color:var(--brass);font-size:15px}
+  .step p{font-size:15px;color:var(--muted);margin-top:8px;max-width:36ch}
+  @media(max-width:820px){.steps{grid-template-columns:1fr;gap:38px}.step p{max-width:none}}
 
-  .founder{background:var(--ink);color:var(--paper)}
-  .founder .two{align-items:center}
-  .founder .quote{font-family:'Newsreader',serif;font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.45;font-weight:400}
+  .dial-band{margin-top:clamp(52px,8vh,84px);border:1px solid var(--line);border-radius:4px;background:var(--paper);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+  .dial-copy{padding:clamp(28px,4vw,52px)}
+  .dial-copy h3{font-family:'Newsreader',serif;font-weight:400;font-size:clamp(24px,2.6vw,32px);letter-spacing:-.01em}
+  .dial-copy p{font-size:15px;color:var(--muted);margin-top:12px;max-width:44ch}
+  .dial-choices{display:flex;gap:10px;margin-top:26px}
+  .dial-choices button{font-family:inherit;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:11px 18px;border-radius:2px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;transition:border-color .2s,color .2s,background .2s}
+  .dial-choices button[aria-pressed="true"]{border-color:var(--ink);color:var(--ink);background:#fff}
+  .dial-stage{border-left:1px solid var(--line);background:var(--bone);display:flex;align-items:flex-end;justify-content:center;padding:clamp(28px,4vw,52px);min-height:300px;position:relative}
+  .dial-stage .base{position:absolute;bottom:clamp(28px,4vw,52px);left:50%;transform:translateX(-50%);width:120px;height:8px;border-radius:4px;background:#fff;border:1px solid var(--line)}
+  .arc{display:flex;align-items:flex-end;gap:9px;margin-bottom:20px}
+  .arc i{display:block;width:7px;border-radius:4px;background:var(--sand);transition:height .5s cubic-bezier(.22,.9,.3,1),opacity .5s}
+  .dial-note{position:absolute;top:18px;right:20px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  @media(max-width:820px){.dial-band{grid-template-columns:1fr}.dial-stage{border-left:0;border-top:1px solid var(--line);min-height:240px}}
+
+  /* ---------- full-bleed breather ---------- */
+  .breather{position:relative;padding:0;background:var(--bone)}
+  .breather .scene{position:relative;width:100%;aspect-ratio:21/9;min-height:320px;overflow:hidden}
+  .breather .scene img{width:100%;height:100%;object-fit:cover}
+  .breather .caption{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:clamp(22px,4vh,40px) var(--pad);
+    background:linear-gradient(to top,rgba(27,26,23,.42),rgba(27,26,23,0));
+  }
+  .breather .caption p{
+    font-family:'Newsreader',serif;font-style:italic;font-weight:300;
+    color:var(--paper);font-size:clamp(20px,2.6vw,30px);letter-spacing:-.01em;
+    max-width:var(--maxw);margin:0 auto;
+  }
+  @media(max-width:760px){.breather .scene{aspect-ratio:4/3}}
+
+  /* ---------- chapter 03 · object ---------- */
+  .object .head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:clamp(38px,6vh,60px);flex-wrap:wrap}
+  .object-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:start}
+  .spec{border-top:1px solid var(--line)}
+  .spec-row{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .spec-row dt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--muted);padding-top:3px}
+  .spec-row dd{font-size:15.5px;color:var(--ink)}
+  .spec-row dd i{font-family:'Newsreader',serif;color:var(--muted)}
+  .object-media{display:grid;gap:18px}
+  .object-media .frame{border-radius:4px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+  .object .foot{margin-top:26px;font-family:'Newsreader',serif;font-style:italic;color:var(--muted);font-size:16px}
+  @media(max-width:900px){.object-grid{grid-template-columns:1fr}.spec-row{grid-template-columns:120px 1fr}}
+
+  /* ---------- comparison matrix ---------- */
+  .compare .head{max-width:640px;margin-bottom:clamp(38px,6vh,60px)}
+  .matrix{width:100%;border-top:1px solid var(--line)}
+  .mrow{display:grid;grid-template-columns:1.5fr 1.1fr 1fr 1fr;border-bottom:1px solid var(--line)}
+  .mrow > div{padding:16px 14px;font-size:14.5px;display:flex;align-items:center}
+  .mrow .crit{color:var(--muted);font-size:12.5px;letter-spacing:.02em}
+  .mrow.htr > div{padding:14px}
+  .mrow .col-h{font-family:'Newsreader',serif;font-size:18px;letter-spacing:-.01em;font-weight:500;align-items:flex-end}
+  .mrow .col-h small{font-family:'Hanken Grotesk';font-weight:500;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:none;display:block}
+  .col-ouve{background:rgba(179,164,136,.12);position:relative}
+  .mrow .col-ouve{font-weight:600;color:var(--ink)}
+  .mrow.htr .col-ouve{color:var(--ink)}
+  .mrow .yes{color:var(--ink);font-weight:600}
+  .mrow .no{color:#a49a8c}
+  .compare .foot{margin-top:22px;font-family:'Newsreader',serif;font-style:italic;color:var(--muted);font-size:16px;max-width:60ch}
+  @media(max-width:640px){
+    .mrow{grid-template-columns:1.3fr 1fr 1fr 1fr}
+    .mrow > div{padding:13px 8px;font-size:12px}
+    .mrow .crit{font-size:11px}
+    .mrow .col-h{font-size:14px}
+    .mrow .col-h small{display:none}
+  }
+
+  /* ---------- who it's for ---------- */
+  .who .head{max-width:640px;margin-bottom:clamp(34px,5vh,54px)}
+  .who-list{border-top:1px solid var(--line)}
+  .who-row{display:grid;grid-template-columns:220px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  .who-row h3{font-family:'Newsreader',serif;font-weight:500;font-size:22px;letter-spacing:-.01em;display:flex;align-items:baseline;gap:12px}
+  .who-row h3 .n{font-family:'Newsreader',serif;font-style:italic;font-weight:300;color:var(--brass);font-size:14px}
+  .who-row p{font-size:15.5px;color:var(--muted);max-width:52ch}
+  @media(max-width:680px){
+    .who-row{grid-template-columns:1fr;gap:6px}
+    .who-row p{max-width:none}
+  }
+
+  /* ---------- founder over texture ---------- */
+  .founder{position:relative;padding:clamp(84px,13vh,150px) 0;background:var(--bone);overflow:hidden}
+  .founder .tex{position:absolute;inset:0}
+  .founder .tex img{width:100%;height:100%;object-fit:cover}
+  .founder .card{
+    position:relative;background:rgba(251,250,246,.96);
+    border-radius:4px;max-width:760px;
+    padding:clamp(32px,5vw,64px);
+    box-shadow:0 40px 90px -50px rgba(27,26,23,.45);
+  }
+  .founder .quote{font-family:'Newsreader',serif;font-style:italic;font-weight:300;font-size:clamp(20px,2.5vw,28px);line-height:1.5;color:#2e2b25}
   .founder .quote p{margin-top:22px}
-  .founder .sig{margin-top:30px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);font-style:normal;font-family:'Hanken Grotesk';font-weight:700}
-  .founder .panel-img{border:1px solid rgba(255,255,255,.14);background:#26241f}
+  .founder .quote p:first-child{margin-top:0}
+  .founder .quote p:first-child::before{content:"";display:block;width:64px;height:1px;background:var(--brass);margin-bottom:30px}
+  .founder .sig{margin-top:32px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:700;font-family:'Hanken Grotesk';font-style:normal}
 
-  .faq .lead{margin-bottom:46px}
-  .faq-item{border-top:1px solid var(--line);padding:24px 0;max-width:760px}
-  .faq-item:last-child{border-bottom:1px solid var(--line)}
-  .faq-item h4{font-size:18px;font-weight:700;letter-spacing:-.01em}
-  .faq-item p{font-size:15px;color:var(--muted);margin-top:8px;max-width:60ch}
+  /* ---------- FAQ ---------- */
+  .faq .lead{margin-bottom:clamp(34px,5vh,52px)}
+  .faq-item{border-top:1px solid var(--line);padding:25px 0;max-width:780px}
+  .faq-item:last-of-type{border-bottom:1px solid var(--line)}
+  .faq-item h4{font-family:'Newsreader',serif;font-weight:500;font-size:20px;letter-spacing:-.01em}
+  .faq-item p{font-size:15px;color:var(--muted);margin-top:9px;max-width:62ch}
 
-  .final{text-align:center}
-  .final h2{font-size:clamp(30px,4.4vw,52px);line-height:1.05;font-weight:800;letter-spacing:-.02em;text-transform:uppercase}
-  .final .sub{font-size:17px;color:var(--muted);margin:18px auto 30px;max-width:34ch}
+  /* ---------- final: ink shell, warm core ---------- */
+  .final{background:var(--ink);color:var(--paper);text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(760px,92vw);height:min(760px,92vw);border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.17) 0%,rgba(176,141,87,0) 62%);pointer-events:none}
+  .final .wrap{position:relative}
+  .final .label{color:rgba(251,250,246,.55)}
+  .final h2{font-family:'Newsreader',serif;font-weight:400;letter-spacing:-.015em;font-size:clamp(34px,4.6vw,58px);line-height:1.06;margin-top:18px}
+  .final h2 em{font-style:italic;font-weight:300;color:var(--sand)}
+  .final .sub{font-size:16.5px;color:rgba(251,250,246,.72);margin:20px auto 34px;max-width:44ch}
   .final .form{margin:0 auto}
-  .perks{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:26px}
-  .perks span{font-size:12.5px;letter-spacing:.06em;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .final .form .row{border-color:rgba(251,250,246,.9);background:rgba(251,250,246,.04)}
+  .final .form input{color:var(--paper)}
+  .final .form input::placeholder{color:rgba(251,250,246,.45)}
+  .final .form button{background:var(--paper);color:var(--ink)}
+  .final .form button:hover{background:#fff}
+  .final .form .meta{justify-content:center;color:rgba(251,250,246,.6)}
+  .perks{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .perks span{font-size:12px;letter-spacing:.08em;color:rgba(251,250,246,.62);display:flex;align-items:center;gap:9px}
 
-  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:13px}
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:13px}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 
-  .modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:100;align-items:center;justify-content:center}
-  .modal.show{display:flex}
-  .modal-box{background:#fff;border-radius:8px;padding:48px;max-width:420px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-  .modal-box h2{font-size:28px;font-weight:700;margin-bottom:12px;color:var(--ink)}
-  .modal-box p{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.5}
-  .modal-box .btn-close{background:var(--ink);color:#fff;border:0;padding:12px 24px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.2s}
-  .modal-box .btn-close:hover{background:#000}
-
-  @media(max-width:860px){.hero-grid,.two{grid-template-columns:1fr;gap:36px}.hero{padding:44px 0 0}section{padding:70px 0}.panel{padding:32px}}
-
-  .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .75s ease,transform .75s ease}
   .rv.in{opacity:1;transform:none}
+  .rv-img{opacity:0;transform:scale(1.025);transition:opacity 1s ease,transform 1.4s cubic-bezier(.22,.9,.3,1)}
+  .rv-img.in{opacity:1;transform:scale(1)}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .rv,.rv-img{opacity:1;transform:none;transition:none}
+    .arc i{transition:none}
+    .gauge .fill{transition:none}
+  }
 </style>
 </head>
 <body>
+
+<div class="gauge" aria-hidden="true">
+  <span class="cap max">Max</span>
+  <div class="track"></div>
+  <div class="fill" id="gaugeFill"></div>
+  <span class="cap min">Min</span>
+</div>
 
 <header>
   <div class="wrap bar">
     <div class="mark">Ouve.</div>
     <div class="tag">The world's first freestanding electric bidet</div>
-    <a href="#" onclick="event.preventDefault();window.scrollTo({top:0,behavior:'smooth'});setTimeout(()=>document.querySelector('#join input').focus(),400)" class="btn">Join waitlist</a>
+    <button class="btn-line" onclick="document.querySelector('#join').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>document.querySelector('#join input').focus(),500)">Join waitlist</button>
   </div>
 </header>
 
+<!-- ============ HERO · copy + form first, image second (mobile-first) ============ -->
 <div class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow rv">No plumber · No installation</div>
-      <h1 class="rv" style="transition-delay:.05s">Your bathroom deserves a bidet. Now yours can.</h1>
-      <p class="sub rv" style="transition-delay:.1s">The first freestanding electric bidet designed to look like it belongs in your bathroom — not hidden under the sink.</p>
-      <div class="form rv" id="join" style="transition-delay:.15s">
+  <div class="wrap inner">
+    <div class="copy">
+      <div class="label rv" style="margin-bottom:0">No plumbing · No installation</div>
+      <h1 class="display rv" style="transition-delay:.05s">Most of the world already <em>cleans with water.</em></h1>
+      <p class="sub rv" style="transition-delay:.1s">Ouve is a freestanding electric bidet — no plumber, no installation, no permission. Fill it, switch it on, rinse.</p>
+      <div class="form rv" id="join" style="transition-delay:.14s">
         <div class="row">
-          <input type="email" placeholder="your@email.com" aria-label="Email">
+          <input type="email" placeholder="your@email.com" aria-label="Email address" autocomplete="email" inputmode="email">
           <button onclick="join(this)" data-location="hero">Join the waitlist →</button>
         </div>
-        <div class="meta"><span class="dot"></span> Join 200+ people already on the waitlist · 10 seconds, no spam</div>
-        <div class="ok">You're on the list. We'll be in touch before launch.</div>
+        <div class="meta"><span class="dot"></span> 200+ already on the list · founding pricing goes to the waitlist first</div>
       </div>
     </div>
-    <div class="hero-img rv" style="transition-delay:.1s"><img src="hero.jpg" width="1396" height="787" alt="Ouve freestanding bidet beside a wall-mounted spray wand"></div>
+    <div class="art rv" style="transition-delay:.12s">
+      <div class="frame"><img src="hero.jpg" width="1396" height="787" alt="The Ouve freestanding bidet on a wooden counter beside its brushed-steel spray wand and coiled hose" fetchpriority="high"></div>
+    </div>
   </div>
 </div>
 
 <div class="strip">
   <div class="wrap">
-    <div class="item rv">No installation<span>Fill from the top</span></div>
-    <div class="item rv" style="transition-delay:.05s">10L reservoir<span>Refill rarely, not daily</span></div>
-    <div class="item rv" style="transition-delay:.1s">Electric pump<span>Consistent pressure</span></div>
-    <div class="item rv" style="transition-delay:.15s">Any bathroom<span>Rented, old, or new</span></div>
+    <div class="item rv">No installation<span>fill from the top</span></div>
+    <div class="item rv" style="transition-delay:.05s">10L reservoir<span>refill rarely, not daily</span></div>
+    <div class="item rv" style="transition-delay:.1s">Three pressures<span>one dial</span></div>
+    <div class="item rv" style="transition-delay:.15s">USB-C power<span>weeks between charges</span></div>
   </div>
 </div>
 
-<section>
-  <div class="wrap two">
-    <div class="panel-img rv"><img src="front.jpg" width="1400" height="791" loading="lazy" decoding="async" alt="Ouve bidet, front view"></div>
-    <div class="panel rv" style="transition-delay:.08s">
-      <p class="lead" style="font-size:26px">Bidets exist. A bidet worth having doesn't.</p>
-      <p>Some seat attachments need a plumber. Worse, you might not be able to reach the pipes at all.</p>
-      <p>Nobody makes a bidet that simply sits next to your toilet, holds enough water for a full day, and looks like it was designed to be there.</p>
-      <p style="font-weight:600;color:var(--ink)">That's Ouve.</p>
+<!-- ============ Nº 01 · THE PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap">
+    <div class="chapter rv"><i>Nº 01</i> The problem</div>
+    <div class="grid">
+      <div class="plate rv">
+        <h2 class="display lead">Bidets exist. A bidet <em>worth having</em> doesn't.</h2>
+        <p class="kicker">This was never about habits. It's about rooms.</p>
+        <p>Western bathrooms were drawn in an era when water meant a plumber and a permanent fixture. Your bathroom never made room — so the habit never made it over.</p>
+        <p>What's on offer proves the point: seat attachments that need installing, travel gadgets that live in a bag, or machines too ugly to leave out.</p>
+        <p><strong>So we made a bidet that doesn't ask.</strong> It stands on its own, holds its own water, and earns its place in the open.</p>
+      </div>
+      <div class="art rv" style="transition-delay:.1s">
+        <div class="frame"><img src="front.jpg" width="1400" height="791" alt="Two front views of the Ouve bidet, water window and dial visible" loading="lazy" decoding="async"></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="how">
+<!-- ============ Nº 02 · THE RITUAL ============ -->
+<div class="skin">
+<section class="ritual">
   <div class="wrap">
+    <div class="chapter rv"><i>Nº 02</i> The ritual</div>
     <div class="head">
-      <div class="eyebrow rv">How it works</div>
-      <div class="lead rv" style="transition-delay:.05s">Three steps. No tools.</div>
+      <h2 class="display lead rv">Three steps. <em>No tools.</em></h2>
     </div>
     <div class="steps">
       <div class="step rv">
-        <div class="num">01</div>
-        <div class="pic"><img src="fill.jpg" width="1400" height="787" loading="lazy" decoding="async" alt="Lift the lid and fill from the top"></div>
-        <h3>Fill it</h3>
-        <p>Lift the lid and fill from the top. At 10L, you're refilling once in a while — not every day. Check the level through the window.</p>
+        <div class="pic"><img src="fill.jpg" width="1400" height="787" alt="The Ouve tank with its lid lifted off, open at the top for filling" loading="lazy" decoding="async"></div>
+        <h3><span class="n">01</span> Fill it</h3>
+        <p>Lift the lid, fill from the top. At 10 litres, you're refilling once in a while — not every day.</p>
       </div>
       <div class="step rv" style="transition-delay:.08s">
-        <div class="num">02</div>
-        <div class="pic"><img src="dial.jpg" width="620" height="480" loading="lazy" decoding="async" alt="One dial controls the electric pump"></div>
-        <h3>Switch it on</h3>
-        <p>One dial. The electric pump does the work — steady pressure from the first use to the last.</p>
+        <div class="pic"><img src="dial.jpg" width="620" height="480" alt="Close-up of the Ouve control dial and display" loading="lazy" decoding="async"></div>
+        <h3><span class="n">02</span> Switch it on</h3>
+        <p>One dial. The electric pump keeps the pressure consistent — first rinse to last.</p>
       </div>
       <div class="step rv" style="transition-delay:.16s">
-        <div class="num">03</div>
-        <div class="pic"><img src="rinse.jpg" width="1400" height="787" loading="lazy" decoding="async" alt="Lift the wand, rinse, set it back"></div>
-        <h3>Rinse</h3>
-        <p>Lift the wand, rinse, set it back. That's the whole thing. No plumbing, no paper.</p>
+        <div class="pic"><img src="rinse.jpg" width="1400" height="787" alt="The Ouve wand docked, hose tucked at the back of the unit" loading="lazy" decoding="async"></div>
+        <h3><span class="n">03</span> Rinse</h3>
+        <p>Lift the wand, rinse, set it back. The hose tucks away behind. That's the whole thing.</p>
+      </div>
+    </div>
+
+    <div class="dial-band rv">
+      <div class="dial-copy">
+        <div class="label" style="margin-bottom:16px">Considered, not complicated</div>
+        <h3>One dial. Three pressures.</h3>
+        <p>Low, for ease. Medium, for most days. High, when you want it. The diaphragm pump holds whichever you choose, steadily.</p>
+        <div class="dial-choices" role="group" aria-label="Choose a pressure setting">
+          <button type="button" aria-pressed="false" data-level="low" onclick="setPressure(this)">Low</button>
+          <button type="button" aria-pressed="true" data-level="med" onclick="setPressure(this)">Medium</button>
+          <button type="button" aria-pressed="false" data-level="high" onclick="setPressure(this)">High</button>
+        </div>
+      </div>
+      <div class="dial-stage" aria-hidden="true">
+        <div class="dial-note" id="dialNote">Medium</div>
+        <div class="arc" id="arc"></div>
+        <div class="base"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+<!-- ============ Nº 03 · THE OBJECT ============ -->
+<section class="object">
+  <div class="wrap">
+    <div class="chapter rv"><i>Nº 03</i> The object</div>
+    <div class="head">
+      <h2 class="display lead rv">The object, <em>indexed.</em></h2>
+      <div class="label rv" style="transition-delay:.05s">Freestanding bidet · Stone</div>
+    </div>
+    <div class="object-grid">
+      <div class="rv">
+        <dl class="spec">
+          <div class="spec-row"><dt>Reservoir</dt><dd>10 litres — <i>refill rarely, not daily</i></dd></div>
+          <div class="spec-row"><dt>Pump</dt><dd>Electric diaphragm, three pressure settings</dd></div>
+          <div class="spec-row"><dt>Power</dt><dd>USB-C rechargeable, detachable battery — <i>weeks between charges</i></dd></div>
+          <div class="spec-row"><dt>Materials</dt><dd>Food-grade throughout; matte, soft-touch housing</dd></div>
+          <div class="spec-row"><dt>Rating</dt><dd>IPX6 water-resistant</dd></div>
+          <div class="spec-row"><dt>Certified</dt><dd>CE · RoHS</dd></div>
+          <div class="spec-row"><dt>Warranty</dt><dd>1 year</dd></div>
+          <div class="spec-row"><dt>Hose</dt><dd>Tucks away at the back — <i>designed to be left out</i></dd></div>
+        </dl>
+        <p class="foot">If a claim isn't on this list, we haven't made it.</p>
+      </div>
+      <div class="object-media rv" style="transition-delay:.08s">
+        <div class="frame"><img src="handle.jpg" width="1400" height="782" alt="Detail of the Ouve arch handle, ribbed on one side" loading="lazy" decoding="async"></div>
+        <div class="frame"><img src="exploded.jpg" width="1400" height="783" alt="The Ouve fill cap and removable pump cartridge, shown apart from the unit" loading="lazy" decoding="async"></div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- ============ Nº 04 · WHY FREESTANDING ============ -->
+<div class="skin">
+<section class="compare">
   <div class="wrap">
-    <div class="feat-head">
-      <div class="lead rv">Considered, down to the detail.</div>
-      <div class="eyebrow rv" style="transition-delay:.05s">Six reasons it earns its place</div>
+    <div class="chapter rv"><i>Nº 04</i> Why freestanding</div>
+    <div class="head">
+      <h2 class="display lead rv">Three ways to get there. <em>One asks nothing of your bathroom.</em></h2>
     </div>
-    <div class="feat-grid">
-      <div class="f rv"><div class="fn">01</div><div><h4>No installation. Not even close.</h4><p>Fill from the top. No plumber, no tools, no landlord permission required.</p></div></div>
-      <div class="f rv" style="transition-delay:.04s"><div class="fn">02</div><div><h4>10L reservoir.</h4><p>Enough for a full household. See the level at a glance through the water window.</p></div></div>
-      <div class="f rv"><div class="fn">03</div><div><h4>Consistent pressure. Every time.</h4><p>Electric pump — not a squirt bottle. The same clean spray from the first use to the last.</p></div></div>
-      <div class="f rv" style="transition-delay:.04s"><div class="fn">04</div><div><h4>Designed to be seen.</h4><p>Not tucked away. A considered object that earns its place next to your toilet.</p></div></div>
-      <div class="f rv"><div class="fn">05</div><div><h4>Works in any bathroom.</h4><p>Rented flat, old house, inaccessible pipes. If you have a toilet, you're in.</p></div></div>
-      <div class="f rv" style="transition-delay:.04s"><div class="fn">06</div><div><h4>Cleaner than paper. Significantly.</h4><p>You already know this one. We won't labour the point.</p></div></div>
+    <div class="matrix rv">
+      <div class="mrow htr">
+        <div class="crit"></div>
+        <div class="col-h col-ouve">Ouve<small>Freestanding</small></div>
+        <div class="col-h">Seat add-on<small>Fixed to the toilet</small></div>
+        <div class="col-h">Travel bottle<small>Handheld</small></div>
+      </div>
+      <div class="mrow">
+        <div class="crit">Installation</div>
+        <div class="col-ouve yes">None</div>
+        <div>Plumbing</div>
+        <div>None</div>
+      </div>
+      <div class="mrow">
+        <div class="crit">Works in a rental</div>
+        <div class="col-ouve yes">Yes</div>
+        <div class="no">Often not</div>
+        <div class="yes">Yes</div>
+      </div>
+      <div class="mrow">
+        <div class="crit">Water on hand</div>
+        <div class="col-ouve yes">10L reservoir</div>
+        <div>Mains-fed</div>
+        <div class="no">A few squeezes</div>
+      </div>
+      <div class="mrow">
+        <div class="crit">Pressure</div>
+        <div class="col-ouve yes">Electric, steady</div>
+        <div>Varies with mains</div>
+        <div class="no">By hand</div>
+      </div>
+      <div class="mrow">
+        <div class="crit">Designed to be left out</div>
+        <div class="col-ouve yes">Yes</div>
+        <div class="no">Hidden on the seat</div>
+        <div class="no">In a bag</div>
+      </div>
     </div>
-    <div class="feat-media">
-      <div class="m rv"><img src="handle.jpg" width="1400" height="782" loading="lazy" decoding="async" alt="The arch handle detail"></div>
-      <div class="m rv" style="transition-delay:.08s"><img src="exploded.jpg" width="1400" height="783" loading="lazy" decoding="async" alt="Fill cap and pump cartridge"></div>
+    <p class="foot">Each solves part of it. Only one needs no plumber, holds its own water, and looks like it belongs in the room.</p>
+  </div>
+</section>
+</div>
+
+<!-- ============ Nº 05 · WHO IT'S FOR ============ -->
+<section class="who">
+  <div class="wrap">
+    <div class="chapter rv"><i>Nº 05</i> Who it's for</div>
+    <div class="head">
+      <h2 class="display lead rv">If you've a toilet, <em>you're in.</em></h2>
+    </div>
+    <div class="who-list">
+      <div class="who-row rv">
+        <h3><span class="n">i</span> Renters</h3>
+        <p>You couldn't touch the plumbing. Now you don't need to — nothing to fit, nothing to explain to a landlord.</p>
+      </div>
+      <div class="who-row rv" style="transition-delay:.05s">
+        <h3><span class="n">ii</span> Families</h3>
+        <p>Ten litres goes round a full household, so you're not refilling between everyone.</p>
+      </div>
+      <div class="who-row rv" style="transition-delay:.1s">
+        <h3><span class="n">iii</span> New parents</h3>
+        <p>Gentle, on hand, and simple to reach for in the weeks when simple matters most.</p>
+      </div>
+      <div class="who-row rv" style="transition-delay:.15s">
+        <h3><span class="n">iv</span> After the gym, or a warm day</h3>
+        <p>Some days a proper rinse just makes sense. This one's always ready for it.</p>
+      </div>
+      <div class="who-row rv" style="transition-delay:.2s">
+        <h3><span class="n">v</span> Honestly, everyone</h3>
+        <p>Most of the world already cleans with water. The only thing that ever stopped you was the room.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="founder">
-  <div class="wrap two">
-    <div class="quote rv">
-      <p>I wanted a bidet. I'm renting — I couldn't touch the plumbing, so that was that.</p>
-      <p>Then it clicked: the problem was never me, or you. It's the bathroom. Ours were designed for an era when water meant a plumber and a permanent fixture. Most of the world cleans with water — the West just built rooms that made it hard.</p>
-      <p>Everything I could actually buy made it worse: a seat attachment that needs installing, a travel gadget for a bag, or something too ugly to leave out. Nothing just sat there, held its own water, and looked like it belonged.</p>
-      <p>So I built one.</p>
-      <div class="sig">Elliot · Founder</div>
+<!-- ============ founder · the warm core ============ -->
+<div class="founder">
+  <div class="wrap">
+    <div class="card rv">
+      <div class="quote">
+        <p>I wanted a bidet. I'm renting — I couldn't touch the plumbing, so that was that.</p>
+        <p>Then it clicked: the problem was never me, or you. It's the bathroom. Ours were designed for an era when water meant a plumber and a permanent fixture. Most of the world cleans with water — the West just built rooms that made it hard.</p>
+        <p>Everything I could actually buy made it worse: a seat attachment that needs installing, a travel gadget for a bag, or something too ugly to leave out. Nothing just sat there, held its own water, and looked like it belonged.</p>
+        <p>So I built one.</p>
+        <div class="sig">Elliot · Founder</div>
+      </div>
     </div>
-    <div class="panel-img rv" style="transition-delay:.08s"><img src="multi.jpg" width="1400" height="793" loading="lazy" decoding="async" alt="Ouve bidet, considered from every angle"></div>
   </div>
-</section>
+</div>
 
+<!-- ============ FAQ ============ -->
 <section class="faq">
   <div class="wrap">
-    <div class="eyebrow rv">FAQ</div>
-    <div class="lead rv" style="transition-delay:.05s">Good questions.</div>
+    <div class="chapter rv"><i>Nº 06</i> Good questions</div>
+    <h2 class="display lead rv" style="transition-delay:.05s">Asked, <em>answered.</em></h2>
+    <div style="height:clamp(28px,4vh,42px)"></div>
     <div class="faq-item rv"><h4>How does it work without plumbing?</h4><p>Fill it from the top, switch it on, and the electric pump pressurises the water. Lift the wand to rinse, then set it back. No pipes, no fixed connection.</p></div>
     <div class="faq-item rv"><h4>Is it hygienic?</h4><p>Food-grade materials throughout, and fresh water every time you fill it.</p></div>
     <div class="faq-item rv"><h4>How do you clean it?</h4><p>The lid lifts off so you can rinse the tank out whenever you like.</p></div>
@@ -264,32 +536,26 @@
   </div>
 </section>
 
+<!-- ============ the ink shell, warm core ============ -->
 <section class="final">
   <div class="wrap">
-    <h2 class="rv">Be first in line.</h2>
-    <p class="sub rv" style="transition-delay:.05s">Founding pricing and early access for the waitlist, before we open to everyone.</p>
-    <div class="form rv" style="transition-delay:.1s">
+    <div class="label rv">Founding pricing · Early access</div>
+    <h2 class="rv" style="transition-delay:.05s">Be first <em>in line.</em></h2>
+    <p class="sub rv" style="transition-delay:.1s">The waitlist hears everything first — founding pricing, early access, and the launch itself.</p>
+    <div class="form rv" style="transition-delay:.15s">
       <div class="row">
-        <input type="email" placeholder="your@email.com" aria-label="Email">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" autocomplete="email" inputmode="email">
         <button onclick="join(this)" data-location="footer">Join the waitlist →</button>
       </div>
-      <div class="ok">You're on the list. We'll be in touch before launch.</div>
+      <div class="meta"><span class="dot"></span> 10 seconds. No spam. Unsubscribe any time.</div>
     </div>
-    <div class="perks rv" style="transition-delay:.15s">
+    <div class="perks rv" style="transition-delay:.2s">
       <span><span class="dot"></span> 200+ already joined</span>
       <span><span class="dot"></span> Founding price</span>
-      <span><span class="dot"></span> Unsubscribe any time</span>
+      <span><span class="dot"></span> First to order</span>
     </div>
   </div>
 </section>
-
-<div id="successModal" class="modal">
-  <div class="modal-box">
-    <h2>You're on the list.</h2>
-    <p>We'll be in touch before launch with founding pricing and early access.</p>
-    <button class="btn-close" onclick="document.getElementById('successModal').classList.remove('show')">Close</button>
-  </div>
-</div>
 
 <footer>
   <div class="wrap">
@@ -299,9 +565,46 @@
 </footer>
 
 <script>
+  // ---- reveals ----
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-  setTimeout(()=>document.querySelectorAll('.hero .rv,.bar .rv').forEach(el=>el.classList.add('in')),60);
+  document.querySelectorAll('.rv,.rv-img').forEach(el=>io.observe(el));
+  setTimeout(()=>document.querySelectorAll('.hero .rv,.hero .rv-img').forEach(el=>el.classList.add('in')),60);
+
+  // ---- the water window: your place on the page ----
+  const gaugeFill=document.getElementById('gaugeFill');
+  let gTick=false;
+  function gauge(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    const p=max>0?Math.min(1,Math.max(0,window.scrollY/max)):0;
+    gaugeFill.style.height=(p*100)+'%';
+    gTick=false;
+  }
+  window.addEventListener('scroll',()=>{if(!gTick){gTick=true;requestAnimationFrame(gauge)}},{passive:true});
+  gauge();
+
+  // ---- pressure dial ----
+  const ARC_N=11;
+  const arcEl=document.getElementById('arc');
+  for(let i=0;i<ARC_N;i++){const b=document.createElement('i');arcEl.appendChild(b)}
+  const bars=[...arcEl.children];
+  const LEVELS={low:{h:44,label:'Low'},med:{h:96,label:'Medium'},high:{h:150,label:'High'}};
+  function renderPressure(level){
+    const L=LEVELS[level];
+    bars.forEach((b,i)=>{
+      const t=i/(ARC_N-1);
+      const shape=Math.sin(t*Math.PI);
+      b.style.height=Math.max(8,L.h*shape)+'px';
+      b.style.opacity=(0.45+0.55*shape).toFixed(2);
+    });
+    document.getElementById('dialNote').textContent=L.label;
+  }
+  function setPressure(btn){
+    document.querySelectorAll('.dial-choices button').forEach(b=>b.setAttribute('aria-pressed', b===btn?'true':'false'));
+    renderPressure(btn.dataset.level);
+  }
+  renderPressure('med');
+
+  // ---- tracking passthrough + Mailchimp submit (preserved exactly) ----
   function getTrackingParams(){
     const params=new URLSearchParams(window.location.search);
     const keep=['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid'];
